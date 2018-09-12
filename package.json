@@ -1,0 +1,24 @@
+{
+  "name": "awesome-styles",
+  "version": "1.0.0",
+  "main": "dist/index.html",
+  "repository": "https://github.com/stunstunstun/awesome-styles",
+  "author": "stunstunstun",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.9.7",
+    "postcss": "^7.0.2",
+    "postcss-preset-env": "^5.3.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
+  }
+}

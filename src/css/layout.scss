@@ -1,0 +1,143 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p,input,button {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  a {
+    text-decoration: none;
+  }
+}
+
+body,input,button {
+  font-family: '나눔고딕', NanumGothic, Helvetica, Dotum, '돋움', AppleSDGothicNeo, sans-serif
+}
+
+.blind {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  height: 75px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+
+  .inner {
+    width: 1260px;
+    margin: 0px auto;
+    height: 100%;
+  }
+  h1 {
+    padding-top: 29px;
+    float: left;
+    margin-right: 45px;
+  }
+  .logo {
+    display: block;
+    background: url(../image/logo.png) no-repeat 0px 0px;
+    width: 113px;
+    height: 16px;
+  }
+  .menu {
+    float: left;
+    margin: 28px 0 0 65px;
+    .link {
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      color: #777;
+      margin-left: 40px;
+    }
+    .link::first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.recent_posts {
+  margin-top: 75px;
+}
+
+.sub_menu {
+  border-bottom: 1px solid #ebebeb;
+  ul {
+    overflow: hidden;
+    width: 1260px;
+    margin: 0px auto;
+  }
+  ul:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  li {
+    float: left;
+    position: relative;
+    a {
+      display: block;
+      width: 120px;
+      height: 74px;
+      line-height: 74px;
+      text-align: center;
+      font-size: 16px;
+      color: #111;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .on:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 120px;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+}
+
+.container {
+  overflow: hidden;
+  width: 1260px;
+  margin: 0px auto;
+  .cotent {
+    float: left;
+    width: 918px;
+    height: 100%;
+    border-right: 1px solid #ededed;
+  }
+  .aside {
+    float: left;
+    width: 342px;
+  }
+}
+
+.portfolio_list {
+  position: relative;
+  border-top: 1px solid #ededed;
+  height: 203px;
+  ul {
+    li {
+      overflow: hidden;
+      position: absolute;
+      a {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    li:nth-child(1) {
+      width: 242px;
+      height: 203px;
+    }
+  }
+}

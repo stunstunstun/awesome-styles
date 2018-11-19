@@ -18,7 +18,11 @@
     "plugins": {
       "postcss-preset-env": {
         "stage": 0
-      }
+      },
+      "autoprefixer": true
     }
+  },
+  "dependencies": {
+    "autoprefixer": "^9.3.1"
   }
 }

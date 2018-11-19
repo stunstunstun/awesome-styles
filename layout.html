@@ -3,26 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <title>First example</title>
-    <link rel="stylesheet" href="src/css/layout.css">
   </head>
   <body>
     <div class="wrap">
       <!-- header -->
       <header class="header">
         <div class="inner">
-          <h1>Portfolio</h1>
-          <nav>
-            <h1>Menu</h1>
+          <h1><a class="logo" href="#"><span class="blind">Portfolio</span></a></h1>
+          <nav class="menu">
+            <h1><span class="blind">Menu</span></h1>
+            <a class="link" href="#">블로그</a>
+            <a class="link" href="#">포트폴리오</a>
           </nav>
+          <!--
+          <div class="search">
+            <label for="user_search" class="blind">검색어</label>
+            <input type="text" id="user_search" placeholder="검색어 입력" />
+            <button type="submit" class="btn_search"><span class="blind">검색</span></button>
+          </div>
+          -->
         </div>
       </header>
       <!-- visual -->
-      <section>
+      <section class="recent_posts">
         <h1>포스트 최근글</h1>
       </section>
       <!-- sub menu -->
-      <div>sub menu</div>
-      <div>
+      <div class="sub_menu">
+        <ul>
+          <li class="on"><a href="#">프롤로그</a></li>
+          <li><a href="#">포스트</a></li>
+        </ul> 
+      </div>
+      <div class="container">
         <!-- contents -->
         <section class="content">
           <h1>프롤로그</h1>
@@ -34,11 +47,25 @@
           </section>
           <article>
             <h1>포트폴리오</h1>
+            <div class="portfolio_list">
+              <ul>
+                <li><a href="#"><img src="./src/image/image1.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image2.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image3.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image4.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image5.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image6.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image7.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image8.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image9.jpg" alt="item" /></a></li>
+                <li><a href="#"><img src="./src/image/image10.jpg" alt="item" /></a></li>
+              </ul>
+            </div>
           </article>
         </section>
         <!-- side menu -->
-        <aside>
-          <div class="">
+        <aside class="aside">
+          <div class="category">
             <h1>Category</h1>
           </div>
           <div>
@@ -52,5 +79,6 @@
       <!-- footer -->
       <footer></footer>
     </div>
+    <script src="src/js/main.js"></script>
   </body>
 </html> 

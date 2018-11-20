@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>GitHub Jobs Korea</title>
+    <script src="http://naver.github.io/egjs-flicking/release/latest/dist/flicking.pkgd.min.js"></script>
+    <script src="http://naver.github.io/egjs-flicking/release/plugins/latest/dist/OpacityEffect.min.js"></script>
+    <script src="http://naver.github.io/egjs-flicking/release/plugins/latest/dist/ParallaxEffect.min.js"></script>
   </head>
   <body>
     <div class="wrap">
       <!-- header -->
       <header class="header">
         <div class="inner">
-          <h1><a class="logo" href="/"><img src="./src/image/githubjobs.png" width="50" height="50" alt="" /></a></h1>
+          <h1><a class="logo" href="#" onclick="onClickLogo()"><img src="./src/image/githubjobs.png" width="50" height="50" alt="" /></a></h1>
           <nav class="menu">
             <h1><span class="blind">Menu</span></h1>
             <a class="link" href="#">Posts</a>
@@ -18,10 +21,6 @@
           </nav>
         </div>
       </header>
-      <!-- visual -->
-      <section class="recent_posts">
-        <h1><span class="blind">포스트 최근글</span></h1>
-      </section>
       <!-- sub menu -->
       <div class="sub_menu">
         <ul>
@@ -34,14 +33,82 @@
           <li><a href="#">#ios</a></li>
         </ul> 
       </div>
+      <!-- about -->
+      <section class="about">
+        <h1><span class="blind">About</span></h1>
+        <div id="popup" class="layer_popup">
+          <div class="layer_inner">
+            <div class="btn_close">
+              <a href="#" onclick="onClickClosePopup()">✖️</a>
+            </div>
+            <div class="detail">
+              BlahBlahBlah!
+            </div>
+          </div>
+        </div>
+        <div id="flicking_wrapper">
+          <div class="pannel">
+            <ul>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="thumbnail">
+                    <img src="./src/image/image4.jpg" width="300" height="200" alt="" />
+                  </div>
+                  <div class="contents">
+                    <span class="title">You don't know JS!</span>
+                    <span class="text">어쩌면 모든 순간은 아름답다. 다만 우리가 놓치고 있을 뿐!</span>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="thumbnail">
+                    <img src="./src/image/image5.jpg" width="300" height="200" alt="" />
+                  </div>
+                  <div class="contents">
+                    <span class="title">Her</span>
+                    <span class="text">어쩌면 모든 순간은 아름답다. 다만 우리가 놓치고 있을 뿐!</span>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="thumbnail">
+                    <img src="./src/image/image6.jpg" width="300" height="200" alt="" />
+                  </div>
+                  <div class="contents">
+                    <span class="title">La La Land</span>
+                    <span class="text">어정쩡한 어른이 된 나</span>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="thumbnail">
+                    <img src="./src/image/image6.jpg" width="300" height="200" alt="" />
+                  </div>
+                  <div class="contents">
+                    <span class="title">La La Land</span>
+                    <span class="text">어정쩡한 어른이 된 나</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn prev"><span class="blind">이전</span></button>
+        <button class="btn next"><span class="blind">다음</span></button>
+      </section>
+      <!-- main -->
       <div class="container">
         <!-- contents -->
         <section class="content">
           <h1><span class="blind">프롤로그</span></h1>
+          <!-- top posts -->
           <section class="section">
-            <h1>🔥 Hot posts</h1>
-            <div class="hot">
-              <ul class="list">
+            <h1>Top posts! &nbsp;🔥</h1>
+            <div class="top_posts">
+              <ul>
                 <li class="item">
                   <a href="#" class="link">
                     <div class="thumbnail">
@@ -93,23 +160,17 @@
               </ul>
             </div>
           </section>
+          <!-- videos -->
           <section class="section">
-            <h1>📹  Videos</h1>
-          </section>
-          <section class="section">
-            <h1>🍔  Other stuffs</h1>
-            <div class="others">
+            <h1>Videos &nbsp;📹</h1>
+            <div class="videos">
               <ul>
-                <li><a href="#"><img src="./src/image/image1.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image2.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image3.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image4.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image5.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image6.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image7.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image8.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image9.jpg" alt="item" /></a></li>
-                <li><a href="#"><img src="./src/image/image10.jpg" alt="item" /></a></li>
+                <li class="item">
+                  <a href="#"><img src="./src/image/image1.jpg" width="420" height="260" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="./src/image/image2.jpg" width="420" height="260" /></a>
+                </li>
               </ul>
             </div>
           </section>
@@ -117,17 +178,17 @@
         <!-- side menu -->
         <aside class="aside">
           <section class="section">
-            <h1>📌  GitHub Rank Korea</h1>
+            <h1>GitHub Rank Korea &nbsp;📌</h1>
           </section>
         </aside>
       </div>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="inner">
-          <a href="#" class="btn_top"></a>
-        </div>
-      </footer>
+      <script src="src/js/main.js"></script>
     </div>
-    <script src="src/js/main.js"></script>
+          <!-- footer -->
+          <footer class="footer">
+              <div class="inner">
+                <a href="#" class="btn_top"></a>
+              </div>
+            </footer>
   </body>
 </html> 

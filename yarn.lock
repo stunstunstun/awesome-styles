@@ -6,6 +6,34 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
+"@egjs/axes@^2.5.7":
+  version "2.5.8"
+  resolved "https://registry.yarnpkg.com/@egjs/axes/-/axes-2.5.8.tgz#87fddc4708338d24787f297ad912b5a4f0bb4120"
+  integrity sha512-Fjc3uaUFurB/Eqs4xWn7IGD4u87FpPv9+zfMwe5HjF/4hp2561UhoNYf7nevaK5J7pc/eAts5PHA1smvQdWr6g==
+  dependencies:
+    "@egjs/component" "^2.1.2"
+    "@egjs/hammerjs" "^2.0.12"
+
+"@egjs/component@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-2.1.2.tgz#c466a0a6fc6ba2d479814dcbe6ee4643c25a2e5b"
+  integrity sha512-7tnPiqxbSZ0porzlm0+/O3qZdanMj0zOq0sb17wQXuaRG49XKKKJaO+SacGnZDqf308N5hzJ0m9fZ4+j+VBvXA==
+
+"@egjs/flicking@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-2.4.2.tgz#f957378cf7ecc4ab650fc8ea9fe936e78e527704"
+  integrity sha512-AisnCgiYSbC2MYsDK1xRIFHQi3omHcFgQqrbe5gxmkUtxdADtAOqBhRJECDz50MWSVac2ZR4PRCg74YSHa6vOQ==
+  dependencies:
+    "@egjs/axes" "^2.5.7"
+    "@egjs/component" "^2.1.2"
+
+"@egjs/hammerjs@^2.0.12":
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.13.tgz#07aa1cef7345096df34260f37761f6fa75755a91"
+  integrity sha512-6m9PBPvzY0y4VK95XFvwGCeY/6z0P6MAZ+0Xpm2BE2ctuGD/kmmkOo92CkelWq6+bUFFyUmXCZI8FTRoQf3lEQ==
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -22,6 +50,11 @@
   resolved "https://registry.yarnpkg.com/@types/commander/-/commander-2.12.2.tgz#183041a23842d4281478fa5d23c5ca78e6fd08ae"
   dependencies:
     commander "*"
+
+"@types/hammerjs@^2.0.36":
+  version "2.0.36"
+  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.36.tgz#17ce0a235e9ffbcdcdf5095646b374c2bf615a4c"
+  integrity sha512-7TUK/k2/QGpEAv/BCwSHlYu3NXZhQ9ZwBYpzr9tjlPIL2C5BeGhH3DmVavRx3ZNyELX5TLC91JTz/cen6AAtIQ==
 
 "@types/semver@^5.4.0":
   version "5.5.0"

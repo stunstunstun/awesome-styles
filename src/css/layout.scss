@@ -28,7 +28,7 @@ body,input,button {
   background-color: #fff;
   height: 75px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  z-index: 4999;
 
   .inner {
     position: relative;
@@ -61,21 +61,18 @@ body,input,button {
   }
 }
 
-.recent_posts {
-  margin-top: 75px;
-}
-
 .sub_menu {
+  margin-top: 75px;
   border-bottom: 1px solid #ebebeb;
   ul {
     overflow: hidden;
     width: 1260px;
     margin: 0px auto;
-  }
-  ul:after {
-    content: '';
-    display: block;
-    clear: both;
+    & ::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
   }
   li {
     float: left;
@@ -103,6 +100,97 @@ body,input,button {
   }
 }
 
+.layer_popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0 ,0, 0, 0.2);
+  z-index: 5000;
+  .layer_inner {
+    position: relative;
+    background-color: #fff;
+    top: 20%;
+    left: 50%;
+    margin-left: -37.5%;
+    width: 75%;
+    height: 50%;
+    padding: 20px;
+    .btn_close {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    .detail {
+      height: 40px;
+      padding-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+  }
+}
+
+.about {
+  padding-top: 12px;
+  border-bottom: 1px solid #ebebeb;
+  #flicking_wrapper {
+    width: 1260px;
+    height: 218px;
+    margin: 0 auto;
+    ul {
+      & ::after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+    }
+    .item {
+      float: left;
+      margin-right: 10px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      a {
+        display: block;
+        position: relative;
+        .contents {
+          position: absolute;
+          padding: 5px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #fff;
+        }
+        .contents .title {
+          font-size: 18px;
+          color: #000;
+        }
+        .contents .text {
+          height: 40px;
+          padding-top: 10px;
+          font-size: 13px;
+          color: #555;
+        }
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 56px;
+    height: 56px;
+    margin-top: -28px;
+    border: 0px;
+    background-color: transparent;
+    .prev {
+      background-image: url('../image/ico_prev.png');
+    }
+    .next {
+      background-image: url('../image/ico_next.png');
+    }
+  }
+}
+
 .container {
   overflow: hidden;
   width: 1260px;
@@ -111,6 +199,7 @@ body,input,button {
     float: left;
     width: 960px;
     height: 100%;
+    padding-bottom: 26px;
     border-right: 1px solid #ededed;
     box-sizing: border-box;
   }
@@ -129,11 +218,13 @@ body,input,button {
   }
 }
 
-.hot {
-  .list:after {
-    display: block;
-    clear: both;
-    content: '';
+.top_posts {
+  ul {
+    & ::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
   }
   .item {
     float: left;
@@ -175,20 +266,17 @@ body,input,button {
   }
 }
 
-.others {
-  position: relative;
-  height: 203px;
+.videos {
   ul {
-    li {
-      overflow: hidden;
-      position: absolute;
-      a {
-        display: block;
-      }
-      img {
-        width: 100%;
-      }
+    & ::after {
+      display: block;
+      content: '';
+      clear: both;
     }
+  }
+  .item {
+    float: left;
+    margin: 0px 16px 0px 0px;
   }
 }
 
@@ -196,14 +284,12 @@ body,input,button {
   border-top: 1px solid #ededed;
   background-color: #fff;
   .inner {
-    width: 1260px;
     height: 200px;
     margin: 0px auto;
   }
   .btn_top {
     position: fixed;
-    left: 50%;
-    margin-left: 500px;
+    right: 5%;
     bottom: 116px;
     width: 44px;
     height: 44px;

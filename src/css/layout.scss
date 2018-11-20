@@ -31,33 +31,32 @@ body,input,button {
   z-index: 999;
 
   .inner {
+    position: relative;
     width: 1260px;
     margin: 0px auto;
     height: 100%;
-  }
-  h1 {
-    padding-top: 29px;
-    float: left;
-    margin-right: 45px;
-  }
-  .logo {
-    display: block;
-    background: url(../image/logo.png) no-repeat 0px 0px;
-    width: 113px;
-    height: 16px;
-  }
-  .menu {
-    float: left;
-    margin: 28px 0 0 65px;
-    .link {
-      float: left;
-      font-size: 16px;
-      font-weight: bold;
-      color: #777;
-      margin-left: 40px;
+    text-align: center;
+    .logo {
+      display: block;
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
-    .link::first-child {
-      margin-left: 0;
+    h1 {
+      padding-top: 29px;
+      float: left;
+    }
+    .menu {
+      padding: 28px 0px 0px 100px;
+      float: left;
+      .link {
+        float: left;
+        font-size: 16px;
+        font-weight: bold;
+        color: #777;
+        margin-right: 60px;
+      }
     }
   }
 }
@@ -108,21 +107,76 @@ body,input,button {
   overflow: hidden;
   width: 1260px;
   margin: 0px auto;
-  .cotent {
+  .content {
     float: left;
-    width: 918px;
+    width: 960px;
     height: 100%;
     border-right: 1px solid #ededed;
+    box-sizing: border-box;
   }
   .aside {
     float: left;
-    width: 342px;
+    padding-left: 16px;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
   }
 }
 
-.portfolio_list {
+.section {
+  h1 {
+    padding: 20px 0px 10px 0px;
+  }
+}
+
+.hot {
+  .list:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  .item {
+    float: left;
+    margin: 0px 16px 0px 0px;
+    width: 290px;
+    .thumbnail {
+      margin-bottom: 10px;
+    }
+    .contents {
+      span {
+        display: block;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        color: #000;
+      }
+      .text {
+        height: 40px;
+        padding-top: 10px;
+        font-size: 13px;
+        color: #555;
+      }
+      .category {
+        padding: 20px 0px 42px 0px;
+        span {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          color: #555;
+        }
+        .bar {
+          width: 1px;
+          height: 10px;
+          background-color: #555;
+        }
+      }
+    }
+  }
+}
+
+.others {
   position: relative;
-  border-top: 1px solid #ededed;
   height: 203px;
   ul {
     li {
@@ -135,9 +189,24 @@ body,input,button {
         width: 100%;
       }
     }
-    li:nth-child(1) {
-      width: 242px;
-      height: 203px;
-    }
+  }
+}
+
+.footer {
+  border-top: 1px solid #ededed;
+  background-color: #fff;
+  .inner {
+    width: 1260px;
+    height: 200px;
+    margin: 0px auto;
+  }
+  .btn_top {
+    position: fixed;
+    left: 50%;
+    margin-left: 500px;
+    bottom: 116px;
+    width: 44px;
+    height: 44px;
+    background: url('../image/ico_top.png') no-repeat;
   }
 }

@@ -2,52 +2,103 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>First example</title>
+    <title>GitHub Jobs Korea</title>
   </head>
   <body>
     <div class="wrap">
       <!-- header -->
       <header class="header">
         <div class="inner">
-          <h1><a class="logo" href="#"><span class="blind">Portfolio</span></a></h1>
+          <h1><a class="logo" href="/"><img src="./src/image/githubjobs.png" width="50" height="50" alt="" /></a></h1>
           <nav class="menu">
             <h1><span class="blind">Menu</span></h1>
-            <a class="link" href="#">블로그</a>
-            <a class="link" href="#">포트폴리오</a>
+            <a class="link" href="#">Posts</a>
+            <a class="link" href="#">Jobs</a>
+            <a class="link" href="#">My Profile</a>
           </nav>
-          <!--
-          <div class="search">
-            <label for="user_search" class="blind">검색어</label>
-            <input type="text" id="user_search" placeholder="검색어 입력" />
-            <button type="submit" class="btn_search"><span class="blind">검색</span></button>
-          </div>
-          -->
         </div>
       </header>
       <!-- visual -->
       <section class="recent_posts">
-        <h1>포스트 최근글</h1>
+        <h1><span class="blind">포스트 최근글</span></h1>
       </section>
       <!-- sub menu -->
       <div class="sub_menu">
         <ul>
-          <li class="on"><a href="#">프롤로그</a></li>
-          <li><a href="#">포스트</a></li>
+          <li class="on"><a href="#">#all</a></li>
+          <li><a href="#">#javascript</a></li>
+          <li><a href="#">#python</a></li>
+          <li><a href="#">#frontend</a></li>
+          <li><a href="#">#backend</a></li>
+          <li><a href="#">#android</a></li>
+          <li><a href="#">#ios</a></li>
         </ul> 
       </div>
       <div class="container">
         <!-- contents -->
         <section class="content">
-          <h1>프롤로그</h1>
-          <section>
-            <h1>인기글</h1>
+          <h1><span class="blind">프롤로그</span></h1>
+          <section class="section">
+            <h1>🔥 Hot posts</h1>
+            <div class="hot">
+              <ul class="list">
+                <li class="item">
+                  <a href="#" class="link">
+                    <div class="thumbnail">
+                      <img src="./src/image/image4.jpg" width="287" height="180" alt="" />
+                    </div>
+                    <div class="contents">
+                      <span class="title">You don't know JS!</span>
+                      <span class="text">어쩌면 모든 순간은 아름답다. 다만 우리가 놓치고 있을 뿐!</span>
+                      <div class="category">
+                        <span>발견</span>
+                        <span class="bar"></span>
+                        <span>SF</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#" class="link">
+                    <div class="thumbnail">
+                      <img src="./src/image/image5.jpg" width="287" height="180" alt="" />
+                    </div>
+                    <div class="contents">
+                      <span class="title">Her</span>
+                      <span class="text">어쩌면 모든 순간은 아름답다. 다만 우리가 놓치고 있을 뿐!</span>
+                      <div class="category">
+                        <span>Emotion</span>
+                        <span class="bar"></span>
+                        <span>AI</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#" class="link">
+                    <div class="thumbnail">
+                      <img src="./src/image/image6.jpg" width="287" height="180" alt="" />
+                    </div>
+                    <div class="contents">
+                      <span class="title">La La Land</span>
+                      <span class="text">어정쩡한 어른이 된 나</span>
+                      <div class="category">
+                        <span>Music</span>
+                        <span class="bar"></span>
+                        <span>Love</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
-          <section>
-            <h1>발견/일상</h1>
+          <section class="section">
+            <h1>📹  Videos</h1>
           </section>
-          <article>
-            <h1>포트폴리오</h1>
-            <div class="portfolio_list">
+          <section class="section">
+            <h1>🍔  Other stuffs</h1>
+            <div class="others">
               <ul>
                 <li><a href="#"><img src="./src/image/image1.jpg" alt="item" /></a></li>
                 <li><a href="#"><img src="./src/image/image2.jpg" alt="item" /></a></li>
@@ -61,23 +112,21 @@
                 <li><a href="#"><img src="./src/image/image10.jpg" alt="item" /></a></li>
               </ul>
             </div>
-          </article>
+          </section>
         </section>
         <!-- side menu -->
         <aside class="aside">
-          <div class="category">
-            <h1>Category</h1>
-          </div>
-          <div>
-            <h1>Tags</h1>
-          </div>
-          <div>
-            <h1>Comments and notices</h1>
-          </div>
+          <section class="section">
+            <h1>📌  GitHub Rank Korea</h1>
+          </section>
         </aside>
       </div>
       <!-- footer -->
-      <footer></footer>
+      <footer class="footer">
+        <div class="inner">
+          <a href="#" class="btn_top"></a>
+        </div>
+      </footer>
     </div>
     <script src="src/js/main.js"></script>
   </body>
